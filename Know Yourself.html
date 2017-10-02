@@ -106,7 +106,7 @@ function find(){
 		
 		document.write(name+"</br>");
 		
-		if(gender!=0 && name!=null && age!=null){
+		if(gender!=0 && name!=null && age>0&& age<101){
 			if(name.length<=4){
 				var ab=name.length+parseInt(age)%(name.length/2)+2;
 			}
@@ -129,19 +129,19 @@ function find(){
 			while(i<ab){
 				if(gender==1){
 					x=x+(age%name.length)+11;
-					ch=(x+age)%girl.length+1;
+					ch=((x+age)%(girl.length))+1;
 					document.write("*"+girl[ch]+"</br>");
 				}
 				else{
 					x=x+(age%name.length)+11;
-					ch=(x+age)%boy.length+1;
+					ch=((x+age)%(boy.length))+1;
 					document.write("*"+boy[ch]+"</br>");
 				}
 				i++;
 			}
 		}
 		else{
-			alert("Please Fill all the Details");
+			alert("Please Fill Valid Details");
 		}
 }
 </script>
