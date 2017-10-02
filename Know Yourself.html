@@ -103,10 +103,9 @@ function find(){
 		else if(document.getElementById('gb').checked){
 			gender=2;
 		}
-		
-		document.write(name+"</br>");
-		
+				
 		if(gender!=0 && name!=null && age>0&& age<101){
+			document.write(name+"</br>");
 			if(name.length<=4){
 				var ab=name.length+parseInt(age)%(name.length/2)+2;
 			}
@@ -141,7 +140,7 @@ function find(){
 			}
 		}
 		else{
-			alert("Please Fill Valid Details");
+			document.write("<h1 style=color:red;>Please, Fill Valid Details.</h1>");
 		}
 }
 </script>
