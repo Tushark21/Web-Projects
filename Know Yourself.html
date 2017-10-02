@@ -88,7 +88,7 @@ function find(){
 		'Spirited','Sincere','Sensible','Sensitive','Shy','Straightforward','Sympathetic','Smart',
 		'Thrilling','Trustworthy','Thoughtful',
 		'Unselfish',
-		'Vivacious','Valiant',
+		'Valiant',
 		'Welcoming','Warmhearted','Worthy'
 		];
 		
@@ -121,19 +121,21 @@ function find(){
 				i++;
 			}
 			x=x+age;
-		
+			
 			i=0;
 			var ch=0;
 		
 			while(i<ab){
 				if(gender==1){
 					x=x+(age%name.length)+11;
-					ch=((x+age)%(girl.length))+1;
+					x=x%(girl.length);
+					ch=x;
 					document.write("*"+girl[ch]+"</br>");
 				}
 				else{
 					x=x+(age%name.length)+11;
-					ch=((x+age)%(boy.length))+1;
+					x=x%(boy.length);
+					ch=x;
 					document.write("*"+boy[ch]+"</br>");
 				}
 				i++;
