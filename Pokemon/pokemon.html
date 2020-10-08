@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>
+            Pokemon Info
+        </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <div id="heading">
+                <img src="pokeball.png" style="width: 100px; height: 100px; padding: 10px;">
+                Pokémon
+                <div style="position:absolute; top:10; right:10; font-size: 32;">
+                    <span id="time"></span>
+                </div>
+            </div>
+            <nav>
+                <button type="button" class='panel_button selected'>Generation I</button>
+                <button type="button" class='panel_button'>Generation II</button>
+                <button type="button" class='panel_button'>Generation III</button>
+                <button type="button" class='panel_button'>Generation IV</button>
+                <button type="button" class='panel_button'>Generation V</button>
+                <button type="button" class='panel_button'>Generation VI</button>
+                <button type="button" class='panel_button'>Generation VII</button>
+            </nav>
+
+            <h3>
+                <span id="generation_header">Generation I</span>
+                <span style="margin-left: 30%;" id="pokemon_header">Bulbasaur</span>
+            </h3>
+        </header>
+        
+        <!-------------------------->
+        <div>
+            <div class="main_content">
+                <div class="image_style">
+                    <img id="pokemon_image" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" width="360px" height="360px">
+                </div>
+
+                <p id="poke_info">
+                    Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun's rays, the seed grows progressively larger.
+                </p>
+                
+                <div class="pokemon_property">
+                    <span class="property_span">
+                        Type
+                    </span>
+                    <p style="margin-bottom: 30px;">
+                        <span class="pokemon_property_span">Grass</span>
+                        <span class="pokemon_property_span">Poison</span>
+                    </p>
+
+                    <span class="property_span">
+                        Weakness
+                    </span>
+                    <p style="margin-bottom: 30px;">
+                        <span class="pokemon_property_span">Flying</span>
+                        <span class="pokemon_property_span">Fire</span>
+                    </p>
+
+                    <span class="property_span">
+                        Attacks/Abilities
+                    </span>
+                    <p style="margin-bottom: 30px;">
+                        <span class="pokemon_property_span">Solar Beam</span>
+                        <span class="pokemon_property_span">Overgrow</span>
+                    </p>
+                </div>
+            </div>
+
+            <div id="left_panel" class="font_style">
+                <button type="button" class="pokemon_button selected">#001 Bulbasaur</button>
+                <button type="button" class="pokemon_button">#002 Ivysaur</button>
+                <button type="button" class="pokemon_button">#003 Venusaur</button>
+                <button type="button" class="pokemon_button">#004 Charmander</button>
+                <button type="button" class="pokemon_button">#005 Charmeleon</button>
+                <button type="button" class="pokemon_button">#006 Charizard</button>
+                <button type="button" class="pokemon_button">#007 Squirtle</button>
+                <button type="button" class="pokemon_button">#008 Wartortle</button>
+                <button type="button" class="pokemon_button">#009 Blastoise</button>
+                <button type="button" class="pokemon_button">#010 Caterpie</button>
+                <button type="button" class="pokemon_button">#011 Metapod</button>
+                <button type="button" class="pokemon_button">#012 Butterfree</button>
+                <button type="button" class="pokemon_button">#013 Weedle</button>
+                <button type="button" class="pokemon_button">#014 Kakuna</button>
+                <button type="button" class="pokemon_button">#015 Beedrill</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
